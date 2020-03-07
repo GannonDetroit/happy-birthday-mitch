@@ -9,6 +9,11 @@ import photo7 from '../../assets/mitch7.jpg'
 import photo8 from '../../assets/mitch8.jpg'
 import photo9 from '../../assets/mitch9.jpg'
 import photo10 from '../../assets/mitch10.jpg'
+import photo11 from '../../assets/mitch11.jpg'
+import photo12 from '../../assets/mitch12.jpg'
+import Card from '../photo-card/photo-card'
+
+import './gallery.styles.scss'
 
 
 
@@ -68,6 +73,16 @@ class Gallery extends React.Component{
                 image: photo10,
                 description: 'test description'
             },
+            {
+                id: 11,
+                image: photo11,
+                description: 'test description'
+            },
+            {
+                id: 12,
+                image: photo12,
+                description: 'test description'
+            },
         ]
 
         }
@@ -78,7 +93,12 @@ class Gallery extends React.Component{
             <div className='gallery-wrapper'>
                 {
                     this.state.cards.map(card =>
-                        <div key={card.id}>{card.description}</div>)
+                        <Card 
+                        key={card.id}
+                        image={card.image}
+                        description={card.description}
+                        />
+                        )
                 }
             </div>
         )
