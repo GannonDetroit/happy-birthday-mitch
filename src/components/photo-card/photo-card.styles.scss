@@ -1,6 +1,6 @@
 .card-wrapper{
     min-width: 30%;
-    height: 240px;
+    height: 31vh;
     flex: 1 1 auto;
     display: flex;
     align-items: center;
@@ -9,6 +9,11 @@
     margin: 0 7.5px 15px;
     overflow: hidden;
     width: 30vw;
+
+    @media (max-width: 600px){
+      width: 70%;
+      
+    }
 
     &:hover{
     

@@ -3,4 +3,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @media (max-width: 600px){
+        width: 70%;
+        margin-left: 14%;
+    }
+
+
 }
