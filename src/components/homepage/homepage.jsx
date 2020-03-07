@@ -14,6 +14,7 @@ const HomePage = () => (
     <p className='top-text'> I'm also a broke ass bitch and I hate hallmark cards so instead you're getting a dope
         site. Enjoy lol.
     </p>
+    <p>Pssssss... hover over the images...</p>
 
     <Gallery />
     </div>
